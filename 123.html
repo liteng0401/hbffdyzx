@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>河北峰峰第一中学 - 官方网站</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        /* 主体样式 */
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* 导航栏样式 */
+        header {
+            background-color: #2c5282;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #3182ce;
+        }
+
+        nav a.active {
+            background-color: #3182ce;
+        }
+
+        /* 主要内容区域 */
+        main {
+            padding: 2rem 0;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .section h2 {
+            color: #2c5282;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        /* 图片展示样式 */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* 公告样式 */
+        .announcement-list {
+            list-style: none;
+        }
+
+        .announcement-item {
+            padding: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            transition: background-color 0.3s;
+        }
+
+        .announcement-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .announcement-item h3 {
+            color: #2c5282;
+            margin-bottom: 0.5rem;
+        }
+
+        .announcement-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .announcement-content {
+            color: #4b5563;
+        }
+
+        /* 荣誉墙样式 */
+        .honor-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .honor-item {
+            background-color: #f0f7ff;
+            padding: 1rem;
+            border-radius: 4px;
+            border-left: 4px solid #3182ce;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #2c5282;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-info {
+            margin-bottom: 1rem;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+            
+            nav ul {
+                gap: 0.5rem;
+            }
+            
+            nav a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.9rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/60/2c5282/ffffff?text=峰峰一中" alt="河北峰峰第一中学logo">
+                <h1>河北峰峰第一中学</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#intro" class="active">学校简介</a></li>
+                    <li><a href="#environment">校园环境</a></li>
+                    <li><a href="#teachers">师资力量</a></li>
+                    <li><a href="#graduates">优秀毕业生</a></li>
+                    <li><a href="#honors">学校荣誉</a></li>
+                    <li><a href="#announcements">学校公告</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container">
+        <!-- 学校简介 -->
+        <section id="intro" class="section">
+            <h2>学校简介</h2>
+            <p>河北峰峰第一中学始建于1956年，是一所具有深厚文化底蕴和优良办学传统的省级示范性高中。学校坐落于邯郸市峰峰矿区，占地面积120亩，建筑面积5万平方米，校园环境优美，教学设施先进。</p>
+            <p>建校以来，学校始终坚持"立德树人"的办学宗旨，秉承"博学、笃行、崇德、尚美"的校训，培养了数以万计的优秀人才，为地方教育事业发展和社会进步做出了重要贡献。</p>
+            <p>学校现有教学班58个，在校学生3200余人，教职工280余人，其中高级教师86人，一级教师120人，省级骨干教师15人，市级学科带头人28人。</p>
+        </section>
+
+        <!-- 校园环境 -->
+        <section id="environment" class="section">
+            <h2>校园环境</h2>
+            <p>我校校园布局合理，设施完善，拥有现代化的教学楼、实验楼、图书馆、体育馆、学生公寓和餐厅等基础设施。校园内绿树成荫，花草繁茂，文化氛围浓厚，是学生学习成长的理想场所。</p>
+            <div class="image-gallery">
+                <img src="https://via.placeholder.com/300x200/2c5282/ffffff?text=教学楼" alt="教学楼">
+                <img src="https://via.placeholder.com/300x200/2c5282/ffffff?text=图书馆" alt="图书馆">
+                <img src="https://via.placeholder.com/300x200/2c5282/ffffff?text=体育馆" alt="体育馆">
+                <img src="https://via.placeholder.com/300x200/2c5282/ffffff?text=校园绿化" alt="校园绿化">
+            </div>
+        </section>
+
+        <!-- 师资力量 -->
+        <section id="teachers" class="section">
+            <h2>师资力量</h2>
+            <p>学校拥有一支师德高尚、业务精湛、结构合理、富有活力的教师队伍。全体教师爱岗敬业，潜心育人，涌现出一大批省市级优秀教师、模范班主任和教学能手。</p>
+            <p>学校高度重视教师专业发展，定期组织教师参加各类培训和教研活动，与省内外多所名校建立合作关系，不断提升教师的教育教学水平和专业素养。</p>
+            <p>近年来，我校教师在各级各类教学竞赛中屡获佳绩，发表教育教学论文300余篇，承担省市级科研课题20余项，形成了浓厚的教研氛围。</p>
+        </section>
+
+        <!-- 优秀毕业生 -->
+        <section id="graduates" class="section">
+            <h2>优秀毕业生</h2>
+            <p>建校六十余年来，我校培养的毕业生遍布全国各地及海外，他们在各行各业发光发热，为国家建设和社会发展贡献着自己的力量。</p>
+            <p>近年来，我校高考成绩稳步提升，多名学生考入清华大学、北京大学、复旦大学、浙江大学等国内顶尖高校，本科上线率连续多年保持在85%以上。</p>
+            <p>优秀毕业生代表：</p>
+            <ul style="margin-left: 2rem; margin-top: 1rem; line-height: 1.8;">
+                <li>张同学 - 2023届，考入清华大学计算机系</li>
+                <li>李同学 - 2022届，考入北京大学中文系</li>
+                <li>王同学 - 2021届，考入复旦大学医学院</li>
+                <li>赵同学 - 2020届，留学美国斯坦福大学</li>
+            </ul>
+        </section>
+
+        <!-- 学校荣誉 -->
+        <section id="honors" class="section">
+            <h2>学校荣誉</h2>
+            <div class="honor-list">
+                <div class="honor-item">
+                    <h3>省级示范性高中</h3>
+                    <p>河北省教育厅授予</p>
+                </div>
+                <div class="honor-item">
+                    <h3>河北省文明校园</h3>
+                    <p>河北省精神文明建设委员会授予</p>
+                </div>
+                <div class="honor-item">
+                    <h3>邯郸市教育教学先进单位</h3>
+                    <p>邯郸市教育局授予</p>
+                </div>
+                <div class="honor-item">
+                    <h3>河北省绿色学校</h3>
+                    <p>河北省教育厅、环保厅授予</p>
+                </div>
+                <div class="honor-item">
+                    <h3>全国青少年校园足球特色学校</h3>
+                    <p>教育部授予</p>
+                </div>
+                <div class="honor-item">
+                    <h3>邯郸市师德建设先进集体</h3>
+                    <p>邯郸市教育局授予</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学校公告 -->
+        <section id="announcements" class="section">
+            <h2>学校公告</h2>
+            <ul class="announcement-list">
+                <!-- 2025年艺体招生简章（带二维码） -->
+                <li class="announcement-item">
+                    <h3>河北峰峰第一中学2025年艺体招生简章</h3>
+                    <div class="announcement-date">发布时间：2025年5月1日</div> <!-- 请修改为实际发布日期 -->
+                    <div class="announcement-content">
+                        <p>河北峰峰第一中学是一所全日制省级示范性重点高中。学校始建于2000年8月，2020年5月迁入新校区，校区占地220亩，建筑面积10余万平方米。校园内景色怡人，处处生机盎然，艺体教育硕果累累，智慧校园点亮未来。</p>
+                        <p>学校全面贯彻党的教育方针，坚持德智体美劳五育并举，注重艺术体育教育，社团活动丰富。艺术、体育设施设备完善先进，建有专门的艺体中心大楼，可进行声乐、器乐、美术、舞蹈、啦啦操、篮球、排球、武术和体操等运动教学训练活动；室外建有标准400米塑胶跑道、11人制足球场、排球场、羽毛球场、乒乓球场、篮球场等设施齐全；还建有室内体能训练区，室外综合健身区等运动设施。</p>
+                        <p>学校配备艺术、体育专职教师40余名，专业教师团队实力雄厚，艺术体育各类社团常年开展教学训练竞赛活动。学校先后获得教育部贯彻学校体育工作条例优秀学校、全国青少年校园足球特色学校、第三批全国中小学中华优秀传统文化传承学校、河北省体育特色传统学校等荣誉；艺体竞赛成绩优秀，曾参加第二、第三届全国中小学生艺术展演且成绩优异，2022年获《第三届中外人文交流小使者》舞蹈全国展演一等奖，2024年合唱获河北省第八届中小学生艺术节一等奖、全国三等奖，田径代表队获2023年邯郸市第十九届中小学生体育节县市区高中组团体总分第一名。</p>
+                        <p>高考艺体升学成绩斐然，多名毕业生被清华美院、中央美术学院、北京体育大学、中央戏剧学院、中国音乐学院等全国知名院校录取，培养出世界冠军何燃燃、段鹏、孙晓雨，CBA优秀篮球运动员杨超、冯甜等优秀人才。</p>
+
+                        <h4 style="color:#3182ce; margin:1rem 0 0.5rem 0;">第一部分 招生对象</h4>
+                        <p>一、品学兼优，专业和文化课成绩都较好的2025年初三应届毕业生（按上级文件要求，不招收初中复读生，仅限初三应届毕业生报名）。</p>
+                        <p>二、学籍必须在邯郸市峰峰矿区范围内。</p>
+
+                        <h4 style="color:#3182ce; margin:1rem 0 0.5rem 0;">第二部分 招生类别</h4>
+                        <p><strong>一、体育类</strong><br>拟招专业：田径四项（含男、女）、武术专项（含男、女）。<br>基本条件：双眼裸眼视力达到4.7以上，身高男生1.70米以上，女生1.60米以上。</p>
+                        <p><strong>（一）田径四项（男、女）</strong><br>1.招生项目：100米跑、立定三级跳、原地侧向推铅球、800米跑。<br>2.项目资格：根据以往招生测试情况，未达到历年合格成绩的学生不建议报考。</p>
+                        <p><strong>（二）武术专项</strong><br>1.测试项目：基本素质和武术套路。<br>(1) 基本素质：三种腿法（直摆、屈伸、扫转）；跳跃动作（腾空飞脚）；立定跳远。<br>(2) 武术套路：拳术（长拳、太极拳、传统拳）+器械（自选器械、太极器械、传统器械），拳术和器械各选一项。<br>2.测试要求：(1) 需具有较强武术基础；(2) 基本素质较差者，中途淘汰，不再进行后续测试。</p>
+
+                        <p><strong>二、艺术类</strong><br>拟招专业：声乐、器乐、舞蹈、啦啦操、美术。</p>
+                        <p><strong>（一）声乐</strong><br>1.面试要求：女生身高1.60米以上，男生身高1.70米以上。<br>2.唱法要求：美声唱法、民族唱法、通俗唱法等，具有良好的声音条件。<br>3.测试内容：（1）声乐作品（自备一首，报名时将曲目填在相应“测试曲目项”）；（2）模唱：现场播放一段旋律音频，考生听完后用“啊”模仿演唱。<br>4.特别提醒：（1）本次考试考生采用清唱方式，现场不提供伴奏及播放设备；（2）考试过程中不得提及考生姓名，违者按作弊取消考试资格；（3）自选曲目可由评委挑选演唱段落，可随时喊停；（4）考试时要求单人表演，不允许他人助考。</p>
+                        <p><strong>（二）器乐</strong><br>1.招生项目：二胡、琵琶、古筝、古琴、扬琴、阮、竹笛、箫、唢呐、笙、民族鼓；单簧管、长笛、萨克斯、小提琴、大提琴（<strong>不招架子鼓、钢琴、电子琴、吉他</strong>）。<br>2.考核内容：自备考试作品一首（报名时填曲目），另备一首技巧练习曲，不使用伴奏带。<br>3.特别提醒：（1）考点不提供乐器，考生自备；（2）不得提及考生姓名，违者取消资格；（3）评委可挑选演奏段落，随时喊停；（4）单人表演，无助考。</p>
+                        <p><strong>（三）舞蹈</strong><br>1.面试要求：女生身高1.60米以上，男生身高1.70米以上，身材比例好。<br>2.舞种要求：民族舞、古典舞、现当代舞。<br>3.考核内容：（1）基本功展示（软开度、控制、地面技巧等，时长≤3分钟）；（2）成品展示（自备完整独舞剧目1个，时长≤3分钟）。<br>4.考核要求：（1）自备道具、音乐U盘（单盘单曲，mp3格式，做好备份）；（2）女生露额头耳朵、盘头、不化妆，穿体操服+裤袜+软鞋；男生穿紧身背心+舞裤+软鞋，无演出服；（3）不得提及姓名，违者取消资格；（4）评委可挑选段落，随时喊停；（5）单人表演，无助考。</p>
+                        <p><strong>（四）啦啦操</strong><br>1.面试要求：女生身高1.60米以上，男生身高1.70米以上，身材比例好。<br>2.项目分类：爵士、花球、街舞、技巧、健美操。<br>3.考核内容：（1）素质考试：30秒俯卧撑（女生）、击掌俯卧撑（男生）、1分钟两头起、30秒连续团身跳；（2）基本功展示（时长≤3分钟）；（3）成品展示（自备完整成套作品1个，时长≤3分钟）。<br>4.考核要求：（1）自备道具、音乐U盘（单盘单曲，mp3格式，备份）；（2）女生穿体操服+裤袜，男生穿紧身背心+舞裤，无装饰性服装；（3）不得提及姓名，违者取消资格；（4）评委可挑选段落，随时喊停；（5）单人表演，无助考。</p>
+                        <p><strong>（五）美术</strong><br>1.报名要求：具有一定美术功底，身体健康，非色盲、色弱；品学兼优，文化课成绩较好。<br>2.测试内容：素描。<br>3.特别提醒：画纸由学校提供，画板等其它画具由考生自备。</p>
+
+                        <h4 style="color:#3182ce; margin:1rem 0 0.5rem 0;">第三部分 报名方式及现场确认</h4>
+                        <p><strong>一、报名方式</strong><br>（一）报名时间：2025年5月6日——5月10日<br>（二）报名方式：1.扫描下方二维码填写相关信息，确认无误后提交；2.每人限报一项，不得多报、跨报。</p>
+                        <!-- 报名二维码区域 -->
+                        <div style="text-align:center; margin:1rem 0;">
+                            <img src="https://替换为你的二维码图片链接" alt="2025艺体招生报名二维码" style="width:200px; height:200px; border:1px solid #e2e8f0; padding:5px;">
+                            <p style="margin-top:0.5rem; color:#6b7280; font-size:0.9rem;">扫码填写报名信息</p>
+                        </div>
+                        <p><em>注：每个身份证号只允许报名一次，重复提交视为无效；报名成功后扫描二维码加入QQ群，后续通知均在群内发布。</em><br>（三）咨询电话：0310-5162624；0310-5162617。</p>
+                        <p><strong>二、现场确认</strong><br>（一）现场确认时间：2025年5月11日上午8点<br>（二）现场确认地点：河北峰峰第一中学艺体中心二楼<br>（三）现场确认要求及所需材料：1.考生本人现场确认；2.携带本人身份证原件及复印件（复印件空白处写姓名及联系电话）<br>（四）现场确认程序：1.带齐资料按时到指定地点确认；2.文明有序排队，保持间隔；3.按所报项目扫码进对应QQ群；4.审核通过后现场确认测试项目，脱鞋测量身高、体重。</p>
+
+                        <h4 style="color:#3182ce; margin:1rem 0 0.5rem 0;">第四部分 专业测试</h4>
+                        <p>一、专业测试时间：2025年5月17日（各专业具体时间将在QQ群内公布）<br>二、专业测试地点：河北峰峰第一中学（峰峰矿区求知路18号）<br>三、报到携带物品：（一）考生本人身份证原件；（二）体育类考生须提前购买测试当天意外险，携带打印凭证，未购买者不得参加测试。</p>
+
+                        <p style="background-color:#f0f7ff; padding:0.8rem; border-radius:4px; margin-top:1rem;"><strong>温馨提示</strong>：以上物品专业测试当天携带，考生不得携带手机进入考区，家长、送考教师及车辆一律不得进入校园。</p>
+                    </div>
+                </li>
+
+                <!-- 其他公告 -->
+                <li class="announcement-item">
+                    <h3>关于2026年清明节放假安排的通知</h3>
+                    <div class="announcement-date">发布时间：2026-03-10</div>
+                    <div class="announcement-content">
+                        <p>根据国家法定节假日安排，结合我校实际情况，现将2026年清明节放假安排通知如下：</p>
+                        <p>1. 放假时间：4月4日（星期五）至4月6日（星期日）放假，共3天。</p>
+                        <p>2. 返校时间：4月7日（星期一）正常上课。</p>
+                        <p>3. 注意事项：请全体师生注意假期安全，离校前做好教室和宿舍的安全检查工作。</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>地址：河北省邯郸市峰峰矿区XX路XX号</p>
+                <p>联系电话：0310-XXXXXXX 邮箱：ffyz@163.com</p>
+            </div>
+            <p>&copy; 2026 河北峰峰第一中学 版权所有</p>
+        </div>
+    </footer>
+
+    <script>
+        // 导航栏激活状态切换
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('.section');
+
+            // 点击导航链接切换激活状态
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // 移除所有链接的active类
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    // 给当前点击的链接添加active类
+                    this.classList.add('active');
+                });
+            });
+
+            // 滚动时更新导航激活状态
+            window.addEventListener('scroll', function() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 150)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
